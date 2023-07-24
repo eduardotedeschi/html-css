@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplosmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+    <h2>Jeito fácil mas talvez não funcional</h2>
+    <audio src="midia/zoinks-scoob.mp3" controls autoplayx></audio>
+    <!-- MP3 WAV OGG-->
+    <h2>Jeito certo é funcional</h2>
+    <audio preload="none" controls loop >
+        <source src="midia/zoinks-scoob.mp3" type="audio/mpeg">
+        <source src="midia/zoinks-scoob.ogg" type="audio/ogg">
+        <p>Infelizmente não foi possivel reproduzir o áudio em seu navegador. <a href="midia/zoinks-scoob.mp3" download="zoinks-scoob.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!-- MP3 WAV OGG-->
+</body>
+</html>
