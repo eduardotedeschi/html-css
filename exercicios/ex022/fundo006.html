@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
+            /*
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: repeat-y;
-            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            */
+
+            /*
+            Shorthand - background
+                color> image > repeat > attachment > position >/> size
+            */
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center/cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -35,7 +45,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit fugiat praesentium eum saepe porro hic maiores laboriosam inventore magnam nam voluptate, tempora repudiandae cumque accusamus quisquam molestiae veritatis optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum rem eum cupiditate mollitia veritatis nam dolores id ab soluta optio distinctio accusamus commodi, deleniti iure? Autem officia animi architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit ratione magni illum possimus qui libero consequuntur veritatis. Fuga iste vel tenetur dolores aperiam eaque consequatur provident porro beatae minima.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit fugiat praesentium eum saepe porro hic maiores laboriosam inventore magnam nam voluptate, tempora repudiandae cumque accusamus quisquam molestiae veritatis optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum rem eum cupiditate mollitia veritatis nam dolores id ab soluta optio distinctio accusamus commodi, deleniti iure? Autem officia animi architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit ratione magni illum possimus qui libero consequuntur veritatis. Fuga iste vel tenetur dolores aperiam eaque consequatur provident porro beatae minima.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit fugiat praesentium eum saepe porro hic maiores laboriosam inventore magnam nam voluptate, tempora repudiandae cumque accusamus quisquam molestiae veritatis optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum rem eum cupiditate mollitia veritatis nam dolores id ab soluta optio distinctio accusamus commodi, deleniti iure? Autem officia animi architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit ratione magni illum possimus qui libero consequuntur veritatis. Fuga iste vel tenetur dolores aperiam eaque consequatur provident porro beatae minima.</p>
-        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit fugiat praesentium eum saepe porro hic maiores laboriosam inventore magnam nam voluptate, tempora repudiandae cumque accusamus quisquam molestiae veritatis optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum rem eum cupiditate mollitia veritatis nam dolores id ab soluta optio distinctio accusamus commodi, deleniti iure? Autem officia animi architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit ratione magni illum possimus qui libero consequuntur veritatis. Fuga iste vel tenetur dolores aperiam eaque consequatur provident porro beatae minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit fugiat praesentium eum saepe porro hic maiores laboriosam inventore magnam nam voluptate, tempora repudiandae cumque accusamus quisquam molestiae veritatis optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum rem eum cupiditate mollitia veritatis nam dolores id ab soluta optio distinctio accusamus commodi, deleniti iure? Autem officia animi architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit ratione magni illum possimus qui libero consequuntur veritatis. Fuga iste vel tenetur dolores aperiam eaque consequatur provident porro beatae minima.</p>
+
     </main>
 </body>
 </html>
