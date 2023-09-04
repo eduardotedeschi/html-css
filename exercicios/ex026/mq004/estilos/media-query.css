@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* Todas as Demais Mídias */
+
+/* Typical Device Breakpoints
+--------------------------------
+Pequenas Telas: até 600px
+Celular: 600px - 768px
+Tablet: 769px - 992px
+Desktop: 993px - 1200px
+Grandes Telas: acima de 1201px
+ */
+
+@media print{ /* IMPRESSÃO */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body{
+        /*background-image: url(../imagens/back-print.jpg);   DESNECESSÁRIO*/
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after{
+        padding-left: 55px;
+        content: 'Essa impressão foi feita através de Eduardo Tedeschi';
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #print{ display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main{
+        width: 500px;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: block;}
+    #print{ display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){ /* DESKTOP */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main{
+        width: 600px;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #print{ display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){ /* GRANDES TELAS */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #print{ display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
